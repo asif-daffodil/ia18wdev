@@ -1,0 +1,21 @@
+Auto Rename Tag
+Duplicate action
+HTML End Tag Labels
+IntelliSense for CSS class names in HTML
+Live Sass Compiler
+Live Server
+PHP Intelephense
+PHP Namespace Resolver
+Prettier - Code formatter
+vscode-icons
+
+DotENV
+EditorConfig for VS Code
+Laravel Artisan
+Laravel Blade Snippets
+Laravel Extension Pack
+Laravel Extra Intellisense
+Laravel goto view
+Laravel Snippets
+laravel-goto-controller
+Livewire Language Support
