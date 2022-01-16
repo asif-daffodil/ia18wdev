@@ -23,7 +23,7 @@
 
         if(empty($phone)){
             $errPhone = "<span style='color:red'>Please enter your phone number</span>"; 
-        }elseif (!preg_match("/^[0-9+ ]*$/", $phone) || strlen($phone) < 11) {
+        }elseif (!preg_match("/^[0-9+ ]*$/", $phone) || strlen($phone) != 11) {
             $errPhone = "<span style='color:red'>Invalid phone number</span>";
         }
 
