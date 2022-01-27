@@ -1,6 +1,6 @@
 <?php
-    include_once("./php-image-resize/lib/ImageResize.php");
-    use \Gumlet\ImageResize;
+    require 'vendor/autoload.php';
+    use Intervention\Image\ImageManager;
     
 
     if (isset($_POST['botam'])) {
