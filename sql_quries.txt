@@ -1,0 +1,37 @@
+SELECT * FROM `students`;
+
+SELECT * FROM `students` WHERE `id` = 7;
+
+SELECT * FROM `students` WHERE `students`.`id` = 7;
+
+SELECT * FROM `students` WHERE `name` = 'rifat';
+
+SELECT * FROM `students` WHERE `name` = 'rifat' AND `gender` = 'male' AND `student` = false;
+
+SELECT * FROM `students` WHERE `name` = 'rifat' OR `gender` = 'male' OR `student` = true;
+
+SELECT `name`, `fname`, `mname` FROM `students`
+
+SELECT `students`.`name`, `students`.`fname`, `students`.`mname` FROM `students` WHERE `students`.`student` = true AND `students`.`gender` = 'male';
+
+SELECT `students`.`name` AS 'Full Name', `students`.`fname` AS `Father Name`, `students`.`mname` AS 'Mother Name' FROM `students` WHERE `students`.`student` = true AND `students`.`gender` = 'male';
+
+INSERT INTO `students` (`name`, `fname`, `mname`, `gender`, `religion`, `dob`, `biodata`, `student`) VALUES ('Asif Abir', 'Md Akbar Ali', 'Anowara Begum', 'Male', 'Islam', '1987-09-10', 'Zend certified PHP Engineer...', false);
+
+INSERT INTO `students` (`name`, `fname`, `mname`, `gender`, `religion`, `dob`, `biodata`, `student`) VALUES ('Kamal Mia', 'Md Jamal Ali', 'Asesha Begum', 'Male', 'Islam', '1999-09-10', 'ha ha ha...', false), ('Jamal Mia', 'Md Kamal Ali', 'Amina Begum', 'Male', 'Islam', '1999-09-10', 'ha ha ha...', false), ('Tomal Mia', 'Md Tomal Ali', 'Tonima Begum', 'Male', 'Islam', '1999-09-10', 'ha ha ha...', false);
+
+UPDATE `students` SET `name` = 'Akmal Mia' WHERE id = 14
+
+UPDATE `students` SET `name`='Pushpa', `fname`='Naam Nai' WHERE `students`.`id` = 15
+
+DELETE FROM `students` WHERE `id` = 12;
+
+ALTER TABLE `students` ADD `taka` int(11) AFTER `student`
+
+ALTER TABLE `students` DROP COLUMN `taka`
+
+ALTER TABLE `students` ADD `taka` int(11) NOT NULL DEFAULT 0 AFTER `student`
+
+ALTER TABLE `students` CHANGE COLUMN `taka` `dolar` int(11)
+
+SELECT `subjects`.`name` AS 'Subject Name', `students`.`name` AS 'Student Name', `students`.`fname` AS 'Father Name', `students`.`mname` AS 'Mother Name' FROM `subjects` INNER JOIN `students` WHERE `subjects`.`student_id` = `students`.`id`
