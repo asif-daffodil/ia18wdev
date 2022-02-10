@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  background: #000;
+}
+
+nav > ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 750px;
+  margin: auto;
+}
+
+nav > ul li {
+  width: 100%;
+  position: relative;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  line-height: 60px;
+}
+
+nav > ul li:hover {
+  background: red;
+}
+
+nav > ul li:hover > .dd {
+  display: block;
+}
+
+nav > ul li .dd {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #000;
+  list-style: none;
+  width: 100%;
+  display: none;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+.loginform {
+  width: 600px;
+  padding: 20px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 20px #000;
+          box-shadow: 0 0 20px #000;
+  margin: 50px auto;
+}
+
+.loginform h2 {
+  margin-bottom: 20px;
+}
+
+.loginform input[type="text"],
+.loginform input[type="password"] {
+  display: block;
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin-bottom: 16px;
+}
+
+.loginform input[type="submit"] {
+  border-width: 0;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 5px #000;
+          box-shadow: 5px 5px 5px #000;
+}
+
+.login-alert {
+  text-align: center;
+  padding: 40px;
+}
+/*# sourceMappingURL=style.css.map */
