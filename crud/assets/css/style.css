@@ -55,7 +55,8 @@ nav > ul li .dd {
   margin: auto;
 }
 
-.loginform {
+.loginform,
+.changePassForm {
   width: 600px;
   padding: 20px;
   border-radius: 6px;
@@ -64,19 +65,23 @@ nav > ul li .dd {
   margin: 50px auto;
 }
 
-.loginform h2 {
+.loginform h2,
+.changePassForm h2 {
   margin-bottom: 20px;
 }
 
 .loginform input[type="text"],
-.loginform input[type="password"] {
+.loginform input[type="password"],
+.changePassForm input[type="text"],
+.changePassForm input[type="password"] {
   display: block;
   border-radius: 6px;
   padding: 5px 10px;
   margin-bottom: 16px;
 }
 
-.loginform input[type="submit"] {
+.loginform input[type="submit"],
+.changePassForm input[type="submit"] {
   border-width: 0;
   padding: 8px 16px;
   cursor: pointer;
