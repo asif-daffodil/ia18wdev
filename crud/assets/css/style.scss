@@ -47,7 +47,8 @@ nav {
 }
 
 .loginform,
-.changePassForm {
+.changePassForm,
+.addStudent {
   width: 600px;
   padding: 20px;
   border-radius: 6px;
@@ -57,7 +58,9 @@ nav {
     margin-bottom: 20px;
   }
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  select,
+  label {
     display: block;
     border-radius: 6px;
     padding: 5px 10px;

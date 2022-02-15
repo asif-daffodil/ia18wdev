@@ -56,7 +56,8 @@ nav > ul li .dd {
 }
 
 .loginform,
-.changePassForm {
+.changePassForm,
+.addStudent {
   width: 600px;
   padding: 20px;
   border-radius: 6px;
@@ -66,14 +67,23 @@ nav > ul li .dd {
 }
 
 .loginform h2,
-.changePassForm h2 {
+.changePassForm h2,
+.addStudent h2 {
   margin-bottom: 20px;
 }
 
 .loginform input[type="text"],
 .loginform input[type="password"],
+.loginform select,
+.loginform label,
 .changePassForm input[type="text"],
-.changePassForm input[type="password"] {
+.changePassForm input[type="password"],
+.changePassForm select,
+.changePassForm label,
+.addStudent input[type="text"],
+.addStudent input[type="password"],
+.addStudent select,
+.addStudent label {
   display: block;
   border-radius: 6px;
   padding: 5px 10px;
@@ -81,7 +91,8 @@ nav > ul li .dd {
 }
 
 .loginform input[type="submit"],
-.changePassForm input[type="submit"] {
+.changePassForm input[type="submit"],
+.addStudent input[type="submit"] {
   border-width: 0;
   padding: 8px 16px;
   cursor: pointer;
