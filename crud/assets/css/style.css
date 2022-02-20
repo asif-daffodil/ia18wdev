@@ -105,4 +105,36 @@ nav > ul li .dd {
   text-align: center;
   padding: 40px;
 }
+
+.table {
+  width: 100%;
+}
+
+.table td,
+.table th {
+  text-align: left;
+  line-height: 36px;
+}
+
+.table tr:hover {
+  cursor: pointer;
+  background: #ccc;
+}
+
+.table button {
+  border-width: 0;
+  padding: 8px 16px;
+  cursor: pointer;
+  background: cornflowerblue;
+  color: #fff;
+}
+
+.table button:hover {
+  background: darkblue;
+}
+
+.paginateBtn button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

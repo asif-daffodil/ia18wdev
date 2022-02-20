@@ -79,3 +79,35 @@ nav {
   text-align: center;
   padding: 40px;
 }
+
+.table {
+  width: 100%;
+  td,
+  th {
+    text-align: left;
+    line-height: 36px;
+  }
+  tr {
+    &:hover {
+      cursor: pointer;
+      background: #ccc;
+    }
+  }
+  button {
+    border-width: 0;
+    padding: 8px 16px;
+    cursor: pointer;
+    background: cornflowerblue;
+    color: #fff;
+    &:hover {
+      background: darkblue;
+    }
+  }
+}
+
+.paginateBtn {
+  button {
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+}
