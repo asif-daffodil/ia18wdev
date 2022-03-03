@@ -39,8 +39,8 @@ include_once("./header.php");
                         <td><?= $data->religion ?></td>
                         <td><?= date("M-d-Y", strtotime($data->created_at) );  ?></td>
                         <td>
-                            <a href=""><button>Edit</button></a>
-                            <a href=""><button>Delete</button></a>
+                            <a href="./editstudent.php?id=<?= $data->id ?>"><button>Edit</button></a>
+                            <a href="./delete.php?delid=<?= $data->id ?>" onclick="return confirm('do you really want to delete the field?')"><button>Delete</button></a>
                         </td>
                     </tr> 
                 <?php } ?>

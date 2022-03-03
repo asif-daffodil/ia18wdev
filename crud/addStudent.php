@@ -9,7 +9,7 @@
 <?php }else{ ?>
     <div class="container">
         <div class="addStudent">
-            <h2>ADd Student</h2>
+            <h2>Add Student</h2>
             <?php  
                 if (isset($errs)) {
                     foreach($errs as $err){

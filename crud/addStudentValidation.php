@@ -51,13 +51,25 @@
             $crrReligion = $conn->real_escape_string($religion);
         }
 
+        
         if (isset($crrName) && isset($crrGender) && isset($crrCity) && isset($crrMobile) && isset($crrReligion)) {
-            $insertStudent = $conn->query("INSERT INTO `students` (`name`, `gender`, `city`, `mobile`, `religion`) VALUES ('$crrName', '$crrGender', '$crrCity', '$crrMobile', '$crrReligion')");
-            if(!$insertStudent){
-                $errs['dbproblem'] = "Something went wrong";
+            if(!isset($_POST['studentId'])){
+                $insertStudent = $conn->query("INSERT INTO `students` (`name`, `gender`, `city`, `mobile`, `religion`) VALUES ('$crrName', '$crrGender', '$crrCity', '$crrMobile', '$crrReligion')");
+                if(!$insertStudent){
+                    $errs['dbproblem'] = "Something went wrong";
+                }else{
+                    $success = "<div style='color:green;'>Student added successfully</div>";
+                    echo "<script>setInterval(() => {location.href='addStudent.php'}, 2);</script>";
+                }
             }else{
-                $success = "<div style='color:green;'>Student added successfully</div>";
-                echo "<script>setInterval(() => {location.href='addStudent.php'}, 2);</script>";
+                $studentId = $conn->real_escape_string($_POST['studentId']);
+                $updateStudent = $conn->query("UPDATE `students` SET `name` = '$crrName', `gender` = '$crrGender', `city` = '$crrCity', `mobile` = $crrMobile, `religion` = '$crrReligion' WHERE `id` = $studentId");
+                if(!$updateStudent){
+                    $errs['dbproblem'] = "Something went wrong";
+                }else{
+                    $success = "<div style='color:green;'>Student updated successfully</div>";
+                    echo "<script>setInterval(() => {history.go(-2)}, 2000);</script>";
+                }
             }
         }
     }
